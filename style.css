@@ -1,0 +1,15 @@
+body{
+    background-color: #caf4ff ;
+}
+.head{
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: white;
+    height: 60px;
+}
+.head h1{
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+    color: ;
+}
