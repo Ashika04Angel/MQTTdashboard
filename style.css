@@ -13,3 +13,28 @@ body{
     justify-content: center;
     color: #2a52be;
 }
+.boxes{
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+.box1{
+    background-color: #F0F8FF;
+    width: 250px;
+    height: 120px;
+    border-width: 1px;
+    border-radius: 10px;
+}
+.box2{
+    background-color: #F0F8FF;
+    width: 250px;
+    height: 120px;
+    border-width: 1px;
+    border-radius: 10px;
+}
+.box3{
+    background-color: #F0F8FF;
+    width: 250px;
+    height: 120px;
+    border-width: 1px;
+    border-radius: 10px;
+}
