@@ -79,3 +79,8 @@ body{
     height: 185px ;
     margin-top: -183px;
 }
+@media screen and (max-width:600px){
+    .body{
+        flex-wrap: wrap;
+    }
+}
