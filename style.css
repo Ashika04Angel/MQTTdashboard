@@ -45,7 +45,7 @@ body{
 .chart{
     display: flex;
     background-color: #F0F8FF;
-    width: 418px;
+    width: 434px;
     height: 250px;
     margin-left: 822px;
     margin-top: -120px;
@@ -66,7 +66,7 @@ body{
     border-radius: 5px;
     border-width: 1px;
     background-color: #F0F8FF;
-    width: 418px;
+    width: 434px;
     height: 255px;
     margin-top: -60px;
 }
