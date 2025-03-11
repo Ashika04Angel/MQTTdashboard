@@ -25,4 +25,14 @@ client.on('message',(topic,message,clientID)=>{
     const value = message.toString();
     console.log("Recevied message:",value,topic,clientID)
 })
-
+if(topic === 'hoome/Solax/BatteryTemperature'){
+    document.getElementById("clientID").textContent = value
+    num1 = value;
+    test.push({battery:num1})
+    console.log({battery:num1})
+}
+else if(topic === 'home/Solax/PvVoltage2'){
+    document.getElementById("Amount").textContent = value
+    num2 = value
+    console.log(num2)
+}
