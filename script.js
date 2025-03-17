@@ -32,7 +32,12 @@ if(topic === 'hoome/Solax/BatteryTemperature'){
     console.log({battery:num1})
 }
 else if(topic === 'home/Solax/PvVoltage2'){
-    document.getElementById("Amount").textContent = value
-    num2 = value
+    document.getElementById("Amount").textContent = val
+    num2 = val
     console.log(num2)
+}
+else if(topic === 'home/Solax/GridPower'){
+    document.getElementById("Amount").textContent = val
+    num3 = val
+    console.log(num3)
 }
