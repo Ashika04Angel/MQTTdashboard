@@ -7,7 +7,14 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <!-- mqtt -->
-    <script src=https://cdn.jsdelivr.net/npm/mqtt@5.x.x/dist/mqtt.min.js></script> 
+    <script src=https://cdn.jsdelivr.net/npm/mqtt@5.x.x/dist/mqtt.min.js></script>
+    <!-- charts  -->
+    <script src=https://cdn.jsdelivr.net/npm/chart.js></script>
+    <script src=https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js></script>
+    <!-- moment  -->
+    <script src=https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js></script>
+    <!-- axios  -->
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js></script>
 </head>
 
 <body>
@@ -31,13 +38,19 @@
             <!-- box3 -->
             <div class="box3">
                 <h4>Current</h4>
-                <p  style="text-align: end; margin-top: -85px; font-size: 23px; padding: 7px;">bat</p>
+                <p style="text-align: end; margin-top: -85px; font-size: 23px; padding: 7px;">bat</p>
                 <p id="property"></p>
             </div>
         </div>
         <!-- chart -->
         <div class="chart">
             <p>Precentage</p>
+            <canvas id="doughnut"></canvas>
+            <div class="button">
+                <button id="grid">Battery</button>
+                <button id="volt">Voltage</button>
+                <button id="battery">Current</button>
+            </div>
         </div>
         <!-- Graph -->
         <div class="graph">
