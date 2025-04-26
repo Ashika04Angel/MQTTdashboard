@@ -28,3 +28,30 @@ client.on('message',(topic,message,clientID)=>{
     const value = message.toString();
     console.log("Recevied message:",value,topic,clientID);
 })
+
+if(topic === 'home/Solax/BatteryTemperature'){ 
+    document.getElementById("clientID").textContent = value 
+    num1um1=value; 
+    test.push({battery:num1}) 
+    // console.log({battery:num1}) 
+    } 
+    else if(topic === 'home/Solax/PvVoltage2'){ 
+    document.getElementById("Amount").textContent = value 
+    num2 = value 
+    test.push({voltage:num2}) 
+    // console.log({voltage:num2}) 
+    } 
+    else if(topic === 'home/Solax/GridPower') { 
+    var random = (Math.random()*2 + 10).toFixed(2); 
+    document.getElementById("Property").textContent = random 
+    document.getElementById("Property1").textContent = random 
+    voltagevalue= value 
+    // num3 = value 
+    num3=(Math.random()*2 + 10).toFixed(2) 
+    test.push({current:num3}) 
+    // console.log(num3) 
+    // console.log({current:num3}) 
+    Checkthershold(voltagevalue); 
+    val.push(value) 
+    } 
+    
