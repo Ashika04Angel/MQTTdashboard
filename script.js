@@ -1,6 +1,7 @@
 // const { get } = require("https");
 const brokerAddress = 'mqtt://test.mosquitto.org:8080/';
-const topic = ['home/Solax/BatteryTemperature',
+const topic = [
+    'home/Solax/BatteryTemperature',
     'home/Solax/PvVoltage2',
     'home/Solax/GridPower',
 ];
@@ -11,6 +12,7 @@ var num1, num2, num3 =''
 let voltagevalue = '';
 let max = 500;
 let test = [];
+let value = '';
 const client = mqtt.connect(brokerAddress)
 
 client.on('connect',()=>{
