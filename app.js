@@ -33,14 +33,14 @@ client.on('message', (topic, message) => {
         if (element) {
             element.textContent = value;
         } else {
-            console.warn(" Element with ID 'clientID' not found!");
+            // console.warn(" Element with ID 'clientID' not found!");
         }
     } else if (topic === 'home/Solax/PvVoltage2') {
         const element = document.getElementById("Amount");
         if (element) {
             element.textContent = value;
         } else {
-            console.warn(" Element with ID 'Amount' not found!");
+            // console.warn(" Element with ID 'Amount' not found!");
         }
     } else if (topic === 'home/Solax/GridPower') {
         var randomValue = (Math.random() * 2 + 10).toFixed(2);
@@ -51,9 +51,9 @@ client.on('message', (topic, message) => {
             propertyElement.textContent = randomValue;
             propertyElement1.textContent = randomValue;
         } else {
-            console.warn(" Elements 'property' or 'property1' not found!");
+            // console.warn(" Elements 'property' or 'property1' not found!");
         }
     }
     
-    console.log(" UI Updated Successfully!");
+    // console.log(" UI Updated Successfully!");
 });

@@ -95,3 +95,18 @@ h4{
     margin-left: -350px;
     margin-top: 200px;
 }
+#clientID{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+#Amount{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+#property{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
