@@ -89,11 +89,14 @@ h4{
 }
 .button{
     display: flex;
+    flex-direction: column;
     border-radius: 5px;
-    width: 40px;
-    height: 40px;
-    margin-left: -350px;
-    margin-top: 200px;
+    width: 70px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+    gap: 30px;
+    /* padding: 20px; */
 }
 #clientID{
     font-size: 25px;
@@ -109,4 +112,13 @@ h4{
     font-size: 25px;
     text-align: center;
     font-weight: bold;
+}
+#doughnut {
+    width: 210px !important;  /* Adjust width */
+    height: 210px !important; /* Adjust height */
+}
+#grid,#volt,#battery{
+    padding: 10px;
+    outline: none;
+    border: 1px;
 }

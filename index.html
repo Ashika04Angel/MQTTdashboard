@@ -11,8 +11,10 @@
     <!-- mqtt -->
     <script src=https://cdn.jsdelivr.net/npm/mqtt@5.x.x/dist/mqtt.min.js></script>
     <!-- charts  -->
+     <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+
     <script src=https://cdn.jsdelivr.net/npm/chart.js></script>
-    <script src=https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js></script>
+    <!-- <script src=https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js></script> -->
     <!-- moment  -->
     <script src=https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js></script>
     <!-- axios  -->
@@ -46,8 +48,8 @@
         </div>
         <!-- chart -->
         <div class="chart">
-            <p>Precentage</p>
-            <canvas id="doughnut"></canvas>
+            <!-- <p>Precentage</p> -->
+            <canvas id="doughnut">as</canvas>
             <div class="button">
                 <button id="grid">Battery</button>
                 <button id="volt">Voltage</button>
@@ -56,6 +58,7 @@
         </div>
         <!-- Graph -->
         <div class="graph">
+            <canvas id="myChart"></canvas>
             <p></p>
         </div>
         <div class="alarm">
@@ -67,7 +70,6 @@
         </div>
     </div>
 </body>
-
 
 
 </html>
